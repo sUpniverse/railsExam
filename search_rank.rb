@@ -8,7 +8,6 @@ url = "http://rank.search.naver.com/rank.js"
 
 result = JSON.parse(RestClient.get(url))
 
-puts result
-#result["data"][0]["data"].each {|c| puts c["rank"].to_s+"등 : "+c["keyword"] }
+result["data"][0]["data"].each {|c| puts c["rank"].to_s+"등 : "+c["keyword"] }
 
 
